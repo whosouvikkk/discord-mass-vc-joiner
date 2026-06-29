@@ -315,7 +315,6 @@ async function startRaid() {
 async function stopRaid() {
   for (const joiner of activeJoiners) {
     try {
-      await joiner.disconnect();
     } catch {}
   }
   activeJoiners = [];
